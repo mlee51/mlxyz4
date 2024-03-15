@@ -43,11 +43,11 @@ export default function Home() {
           <div className="flex gap-2 min-h-[33rem]">
             <a className="w-2/3 relative inline-block">
               <Overlay data={tagMap['sl']} />
-              <Image alt='image' className="group" fill objectFit='cover' src='/sl/1.jpg' />
+              <Image alt='image' className="group" fill objectFit='cover' src='/sl/1.webp' />
             </a>
             <a className="w-full relative">
               <Overlay data={tagMap['tf']} />
-              <Image alt='image' fill objectFit='cover' src='/tf/1.jpg' />
+              <Image alt='image' fill objectFit='cover' src='/tf/1.webp' />
             </a>
           </div>
 
@@ -65,42 +65,42 @@ export default function Home() {
           <div className="flex gap-2 min-h-[33rem]">
             <a className="min-w-[50vh] relative">
             <Overlay data={tagMap['bp']} />
-              <Image alt='image' fill objectFit='cover' src='/bp/2.jpg' />
+              <Image alt='image' fill objectFit='cover' src='/bp/2.webp' />
             </a>
             <a className="w-full relative">
             <Overlay data={tagMap['bp']} />
-              <Image alt='image' fill objectFit='cover' src='/bp/1.jpg' />
+              <Image alt='image' fill objectFit='cover' src='/bp/1.webp' />
             </a>
           </div>
 
           <div className="flex gap-2 min-h-[33rem]">
             <a className="w-2/3 relative">
             <Overlay data={tagMap['bp']} />
-              <Image alt='image' fill objectFit='cover' src='/bp/3.jpg' />
+              <Image alt='image' fill objectFit='cover' src='/bp/3.webp' />
             </a>
             <a className="w-full relative">
             <Overlay data={tagMap['bp']} />
-              <Image alt='image' fill objectFit='cover' src='/bp/4.jpg' />
+              <Image alt='image' fill objectFit='cover' src='/bp/4.webp' />
             </a>
           </div>
           <div className="flex gap-2 min-h-[33rem]">
             <a className="w-full relative">
             <Overlay data={tagMap['ae']} />
-              <Image alt='image' fill objectFit='cover' src='/aero/4.jpg' />
+              <Image alt='image' fill objectFit='cover' src='/aero/4.webp' />
             </a>
             <a className="w-full relative">
             <Overlay data={tagMap['ae']} />
-              <Image alt='image' fill objectFit='cover' src='/aero/2.jpg' />
+              <Image alt='image' fill objectFit='cover' src='/aero/2.webp' />
             </a>
           </div>
           <div className="flex gap-2 min-h-[33rem]">
             <a className="w-full relative">
             <Overlay data={tagMap['ae']} />
-              <Image alt='image' fill objectFit='cover' src='/aero/3.jpg' />
+              <Image alt='image' fill objectFit='cover' src='/aero/3.webp' />
             </a>
             <a className="w-2/3 relative">
             <Overlay data={tagMap['ae']} />
-              <Image alt='image' fill objectFit='cover' src='/aero/1.jpg' />
+              <Image alt='image' fill objectFit='cover' src='/aero/1.webp' />
             </a>
           </div>
 
