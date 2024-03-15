@@ -43,11 +43,11 @@ export default function Home() {
           <div className="flex gap-2 min-h-[33rem]">
             <a className="w-2/3 relative inline-block">
               <Overlay data={tagMap['sl']} />
-              <Image alt='image' className="group" fill objectFit='cover' src='/sl/1.webp' />
+              <Image priority alt='image' className="group" fill objectFit='cover' src='/sl/1.webp' />
             </a>
             <a className="w-full relative">
               <Overlay data={tagMap['tf']} />
-              <Image alt='image' fill objectFit='cover' src='/tf/1.webp' />
+              <Image priority alt='image' fill objectFit='cover' src='/tf/1.webp' />
             </a>
           </div>
 
