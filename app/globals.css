@@ -2,11 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-body {
-
+.header {
+  transition: height 0.3s ease-in-out; /* Adjust duration and timing as needed */
 }
+
+.header.h-full {
+  height: 100vh; /* Adjust height value if needed */
+}
+
 
 ::-webkit-scrollbar {
   display: none;
