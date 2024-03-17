@@ -15,8 +15,7 @@ const Overlay: React.FC<OverlayProps> = ({ data }) => {
   }
 
   return (
-    <div className="w-full h-full relative overlay group z-20">
-       
+    <div className="w-full h-full relative overlay group z-10">
       <div className="opacity-0 transition-opacity duration-300 group-hover:opacity-100 [&>*]:bg-white [&>*]:px-2 [&>*]:rounded-xl w-full pr-2 pt-2 relative flex flex-row-reverse gap-2">
         {data.tags.map((tag: string, index: number) => (
           <div key={index}>{tag}</div>

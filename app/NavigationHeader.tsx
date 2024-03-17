@@ -9,7 +9,7 @@ export default function NavigationHeader() {
     return (
         <>
             <RedDotComponent />
-            <header className="header fixed top-0 w-full bg-white z-30">
+            <header className="header fixed top-0 w-full bg-white z-30 select-none">
                 <div className="relative mx-auto px-5">
                     <div className="grid-cols-24 gap-x-vw grid items-center py-3">
                         <div className="col-span-12 text-2xl font-bold"><Link href="/">Michael Lee</Link></div>
@@ -24,6 +24,7 @@ export default function NavigationHeader() {
                     </div>
                 </div>
             </header>
+          {/* <div className="py-12"/> */}
         </>
     )
 }

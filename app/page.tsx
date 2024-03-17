@@ -27,96 +27,99 @@ export default function Home() {
 
   return (
     <div className="bg-[rgb(255,255,255)]">
-      <NavigationHeader/>
+      <NavigationHeader />
       <main className={`${totalImages === imagesLoaded ? 'opacity-100' : 'opacity-0'} transition-opacity duration-300 flex flex-col items-center justify-around`}>
-        <div className="select-none relative flex flex-col justify-center min-h-[24rem] mt-20 w-full text-center">
-          <div className="text-4xl sm:text-5xl font-medium mt-14">crafting pixels with purpose</div>
+        <div className="select-none relative flex sm:pt-64 sm:pb-36 flex-col w-full text-center">
+          <div className="text-4xl sm:text-5xl font-medium ">crafting pixels with purpose</div>
           <div className="mt-4 text-xl sm:text-2xl text-neutral-400 space-around mx-auto relative lowercase">
             creative technologist / full stack dev
           </div>
         </div>
-        <div className="grid grid-col-24 gap-2 w-full p-2 [&>*]:cursor-pointer">
-          <div className="flex gap-2 min-h-[33rem]">
-            <a className="w-2/3 relative inline-block">
-              <Overlay data={tagMap['sl']} />
-              <Image sizes="(max-width: 768px) 100vw, 33vw" onLoad={trackImageLoad} priority alt='image' className="group object-cover" fill src='/sl/1.webp' />
-            </a>
-            <a className="w-full relative">
-              <Overlay data={tagMap['tf']} />
-              <Image sizes="(max-width: 768px) 100vw, 33vw" onLoad={trackImageLoad} priority alt='image' fill className="object-cover" src='/tf/1.webp' />
-            </a>
-          </div>
+        <div className="grid grid-cols-12 grid-rows-min gap-1 w-full p-1 sm:p-2 sm:gap-2 [&>*]:min-h-[30vw] [&>*]:cursor-pointer">
+          <a className="col-span-4 relative ">
+            <Overlay data={tagMap['sl']} />
+            <Image sizes="(max-width: 768px) 100vw, 33vw" onLoad={trackImageLoad} priority alt='image' className="group object-cover" fill src='/sl/1.webp' />
+          </a>
+          <a className="col-span-8 relative">
+            <Overlay data={tagMap['tf']} />
+            <Image sizes="(max-width: 768px) 100vw, 66vw" onLoad={trackImageLoad} priority alt='image' fill className="object-cover" src='/tf/1.webp' />
+          </a>
 
-          <div className="flex gap-2 min-h-[33rem]">
-            <a className="w-full relative">
-              <Overlay data={tagMap['lm']} />
-              <Image sizes="(max-width: 768px) 100vw, 33vw" alt='image' fill className="object-cover" src='/images/lava/2.webp' />
-            </a>
-            <a className="w-5/6 relative bg-red-500">
-              <Overlay data={tagMap['lm']} />
-              <video className="absolute inset-0 w-full h-full object-cover" autoPlay muted loop src='/images/lava/1.webm' />
-            </a>
-          </div>
+          <a className="col-span-3 relative">
+            <Overlay data={tagMap['bp']} />
+            <Image sizes="(max-width: 768px) 100vw, 33vw" alt='image' fill className="object-cover" src='/bp/2.webp' />
+          </a>
+          <a className="col-span-9 relative">
+            <Overlay data={tagMap['bp']} />
+            <Image sizes="(max-width: 768px) 100vw, 33vw" alt='image' fill className="object-cover" src='/bp/1.webp' />
+          </a>
+          <a className="col-span-4 relative">
+            <Overlay data={tagMap['bp']} />
+            <Image sizes="(max-width: 768px) 100vw, 33vw" alt='image' fill className="object-cover" src='/bp/3.webp' />
+          </a>
+          <a className="col-span-8 relative">
+            <Overlay data={tagMap['bp']} />
+            <Image sizes="(max-width: 768px) 100vw, 33vw" alt='image' fill className="object-cover" src='/bp/4.webp' />
+          </a>
 
-          <div className="flex gap-2 min-h-[33rem]">
-            <a className="min-w-[50vh] relative">
-              <Overlay data={tagMap['bp']} />
-              <Image sizes="(max-width: 768px) 100vw, 33vw" alt='image' fill className="object-cover" src='/bp/2.webp' />
-            </a>
-            <a className="w-full relative">
-              <Overlay data={tagMap['bp']} />
-              <Image sizes="(max-width: 768px) 100vw, 33vw" alt='image' fill className="object-cover" src='/bp/1.webp' />
-            </a>
-          </div>
 
-          <div className="flex gap-2 min-h-[33rem]">
-            <a className="w-2/3 relative">
-              <Overlay data={tagMap['bp']} />
-              <Image sizes="(max-width: 768px) 100vw, 33vw" alt='image' fill className="object-cover" src='/bp/3.webp' />
-            </a>
-            <a className="w-full relative">
-              <Overlay data={tagMap['bp']} />
-              <Image sizes="(max-width: 768px) 100vw, 33vw" alt='image' fill className="object-cover" src='/bp/4.webp' />
-            </a>
-          </div>
-          <div className="flex gap-2 min-h-[33rem]">
-            <a className="w-full relative">
-              <Overlay data={tagMap['ae']} />
-              <Image sizes="(max-width: 768px) 100vw, 33vw" alt='image' fill className="object-cover" src='/aero/4.webp' />
-            </a>
-            <a className="w-full relative">
-              <Overlay data={tagMap['ae']} />
-              <Image sizes="(max-width: 768px) 100vw, 33vw" alt='image' fill className="object-cover" src='/aero/2.webp' />
-            </a>
-          </div>
-          <div className="flex gap-2 min-h-[33rem]">
-            <a className="w-full relative">
-              <Overlay data={tagMap['ae']} />
-              <Image sizes="(max-width: 768px) 100vw, 33vw" alt='image' fill className="object-cover" src='/aero/3.webp' />
-            </a>
-            <a className="w-2/3 relative">
-              <Overlay data={tagMap['ae']} />
-              <Image sizes="(max-width: 768px) 100vw, 33vw" alt='image' fill className="object-cover" src='/aero/1.webp' />
-            </a>
-          </div>
 
-          <div className="flex gap-2 min-h-[33rem]">
-            <a className="w-2/3 relative">
-              <Overlay data={tagMap['ab']} />
-              <Image sizes="(max-width: 768px) 100vw, 33vw" alt='image' fill className="object-cover" src='/images/ab/1.webp' />
-            </a>
-            <a className="w-full relative">
-              <Overlay data={tagMap['ab']} />
-              <Image sizes="(max-width: 768px) 100vw, 33vw" alt='image' fill className="object-cover" src='/images/ab/4.gif' />
-            </a>
+          <a className="col-span-5 relative">
+            <Overlay data={tagMap['lm']} />
+            <Image sizes="(max-width: 768px) 100vw, 33vw" alt='image' fill className="object-cover" src='/images/lava/2.webp' />
+          </a>
+          
+          <a className="col-span-7 relative bg-white">
+            <Overlay data={tagMap['lm']} />
+            <video className="absolute inset-0 w-full h-full object-cover" autoPlay muted loop src='/images/lava/1.webm' />
+          </a>
+         
 
-          </div>
+
+          
+
+          <a className="col-span-7  relative">
+            <Overlay data={tagMap['ae']} />
+            <Image sizes="(max-width: 768px) 100vw, 33vw" alt='image' fill className="object-cover" src='/aero/2.webp' />
+          </a>
+         
+
+         
+          <a className="col-span-5  relative">
+            <Overlay data={tagMap['ae']} />
+            <Image sizes="(max-width: 768px) 100vw, 33vw" alt='image' fill className="object-cover" src='/aero/4.webp' />
+          </a>
+         
+
+
+         
+          <a className="col-span-5 relative">
+            <Overlay data={tagMap['ae']} />
+            <Image sizes="(max-width: 768px) 100vw, 33vw" alt='image' fill className="object-cover" src='/aero/1.webp' />
+          </a>
+          <a className="col-span-7 relative">
+            <Overlay data={tagMap['ae']} />
+            <Image sizes="(max-width: 768px) 100vw, 33vw" alt='image' fill className="object-cover" src='/aero/3.webp' />
+          </a>
+
+
+
+          <a className="col-span-6 relative">
+            <Overlay data={tagMap['ab']} />
+            <Image sizes="(max-width: 768px) 100vw, 33vw" alt='image' fill className="object-cover" src='/images/ab/1.webp' />
+          </a>
+          <a className="col-span-6 relative">
+            <Overlay data={tagMap['ab']} />
+            <Image sizes="(max-width: 768px) 100vw, 33vw" alt='image' fill className="object-cover" src='/images/ab/4.gif' />
+          </a>
+
+
 
 
         </div>
       </main>
 
-      <ReturnHome/>
+      <ReturnHome />
     </div>
   );
 }
