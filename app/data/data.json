@@ -1,52 +1,56 @@
 [
     {
         "name": "the3dapp",
-        "year": 2021,
-        "company": "lavamap",
+        "year": "2021-2022",
+        "company": ["the3dapp","lavamap"],
         "tags": [
             "threejs",
             "vue/vuex",
             "glsl",
             "frontend"
         ],
-        "imageUrls": ["/images/lava/2.webp","/images/lava/1.webp","/images/lava/1.webp"],
+        "imageUrls": ["/images/lava/2.webp","/images/lava/1.webp","/images/lava/1.webm"],
         "imageSpan": ["col-span-5","col-span-7","col-span-12"],
+        "links":[{"text":"web viewer","url":"https://viewer.the3dapp.com/?mode=floorplan&tour_id=eckieMCUkJ8WyKU4dQSu&floor=1"},{"text":"the3dapp","url":"https://www.the3dapp.com/"}],
         "description": "Developed a 3D realtime web viewer tailored for immersive exploration of residential and commercial real estate, seamlessly integrating panoramas and LiDAR meshes. Spearheaded the development of new features and tools using threejs, optimizing performance and loadtimes through meticulous codebase refactoring. Crafted custom GLSL shaders and leveraged Google Firebase cloud functions for efficient data management. Orchestrated a cross-functional team of engineers and product designers while developing a user-friendly interface using vue/vuex."
     },
     {
         "name": "the blue paradox",
         "year": 2020,
-        "company": "scjohnson / radicalmedia / oglivy",
+        "company": ["scjohnson","oglivy", "radicalmedia"],
         "tags": ["unity", "c#", "ios", "osc", "madmapper"],
         "imageUrls": ["/bp/2.webp","/bp/1.webp","/bp/3.webp","/bp/4.webp"],
         "imageSpan": ["col-span-3","col-span-9","col-span-4","col-span-8"],
+        "links":[{"text":"the blue paradox","url":"https://www.radicalmedia.com/work/the-blue-paradox"},{"text":"radialmedia","url":"https://www.radicalmedia.com/"}],
         "description": "Worked on The Blue Paradox, a five room educational immersive experience in partnership with SC Johnson and Conservation International. Responsibilities include iOS app development as well as networking for driving custom lighting configurations."
     },
     {
         "name": "aerobanquets",
-        "year": 2019,
-        "company": "mattia casalegno, james beard foundation",
+        "year": "2019-2020",
+        "company": ["mattia casalegno", "james beard foundation"],
         "tags": ["unity", "c#", "glsl", "vr", "handtracking"],
         "imageUrls": ["/aero/2.webp","/aero/4.webp","/aero/1.webp","/aero/3.webp"],
         "imageSpan": ["col-span-7","col-span-5","col-span-5","col-span-7"],
+        "links":[{"text":"aerobanquets","url":"https://www.aerobanquets.com/"},{"text":"james beard foundation","url":"https://www.jamesbeard.org/aerobanquets-rmx-virtual-reality-food"}],
         "description": "Lead developer for Aerobanquets, a mixed-reality immersive gastronomy dining experience by Mattia Casalegno at the James Beard House. Worked on programing interactions, handtracking, shaders, locally networked virtual reality, and haptic UI/UX interfaces for staff."
     },
     {
         "name": "antibody club",
         "year": 2020,
-        "company": "the umbrella",
+        "company": ["the umbrella"],
         "tags": ["threejs", "js", "glsl"],
         "imageUrls": ["/images/ab/1.webp","/images/ab/4.gif","/images/ab/2.webp","/images/ab/3.webp"],
         "imageSpan": ["col-span-6","col-span-6","col-span-5","col-span-7"],
+        "links":[{"text":"antibody club splash page","url":"https://mlee51.github.io/absplashscreen/"},{"text":"the umbrella","url":"https://www.theumbrella.nyc/"}],
         "description": "Created real-time interactive webpages for The Umbrella, a NYC based creative studio focused on creating experiences that connect people. Created an infinite light tunnel splash page, shaders, and other assets for Antibody Club, a web-based open world video chatting platform. Also created several 3D virtual galleries to exhibit NFTs."
     },
     {
         "name": "temporary forever",
-        "year": 2020,
-        "company": "the umbrella",
+        "year": "2019-2020",
         "tags": ["unity", "c#", "raytracing", "audio reactive"],
         "imageUrls": ["/tf/1.webp","/tf/2.webp","/tf/3.webp"],
         "imageSpan": ["col-span-8","col-span-4","col-span-12"],
+        "links":[{"text":"sum lyte","url":"https://vimeo.com/444084452"},{"text":"temporary forever","url":"https://vimeo.com/414935057"}],
         "description": "A binaural study of sound through the lens of virtual object-oriented ontology. Worlds dynamically created and driven by external noises. Rendered with real-time raytracing."
     }
 ]

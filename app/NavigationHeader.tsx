@@ -15,7 +15,7 @@ export default function NavigationHeader() {
                         <div className="col-span-12 text-2xl font-bold"><Link href="/">Michael Lee</Link></div>
                         <div className="col-span-12">
                             <ul className="hidden sm:flex justify-between">
-                                <li><Link href="/work">Work</Link></li>
+                                <li><Link href={pathname === "/work" ? "/" : "/work"}>Work</Link></li>
                                 <li><Link href={pathname === "/about" ? "/" : "/about"}>About</Link></li>
                                 <li><a href="https://drive.google.com/file/d/1nuAWb5EGPfX37zLz7MV0FFChy4_ivJo8/view" target="_blank">Resume</a></li>
                                 <li><Link href={pathname === "/contact" ? "/" : "/contact"}>contact</Link></li>
@@ -24,7 +24,6 @@ export default function NavigationHeader() {
                     </div>
                 </div>
             </header>
-          {/* <div className="py-12"/> */}
         </>
     )
 }

@@ -16,12 +16,12 @@ const Overlay: React.FC<OverlayProps> = ({ data }) => {
 
   return (
     <div className="w-full h-full relative overlay group z-10">
-      <div className="opacity-0 transition-opacity duration-300 group-hover:opacity-100 [&>*]:bg-white [&>*]:px-2 [&>*]:rounded-xl w-full pr-2 pt-2 relative flex flex-row-reverse gap-2">
+      <div className="opacity-0 transition-opacity duration-300 group-hover:opacity-100 [&>*]:bg-white [&>*]:px-2 [&>*]:rounded-xl w-full pr-1 pt-1 relative flex flex-row-reverse overflow-x-hidden flex-wrap gap-1">
         {data.tags.map((tag: string, index: number) => (
           <div key={index}>{tag}</div>
         ))}
       </div>
-      <div className="opacity-0 transition-opacity duration-300 group-hover:opacity-100 bg-white w-fit absolute px-2 bottom-2 rounded-xl right-2">{data.name}</div>
+      <div className="opacity-0 transition-opacity duration-300 group-hover:opacity-100 bg-white w-fit absolute px-2 bottom-1 rounded-xl right-1">{data.name}</div>
     </div>
   );
 };
