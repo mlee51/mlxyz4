@@ -50,7 +50,7 @@
         "tags": ["unity", "c#", "raytracing", "audio reactive"],
         "imageUrls": ["/tf/1.webp","/tf/2.webp","/tf/3.webp"],
         "imageSpan": ["col-span-8","col-span-4","col-span-12"],
-        "links":[{"text":"sum lyte","url":"https://vimeo.com/444084452"},{"text":"temporary forever","url":"https://vimeo.com/414935057"}],
+        "links":[{"text":"sum lyte","url":"https://vimeo.com/444084452"},{"text":"vimeo","url":"https://vimeo.com/414935057"}],
         "description": "A binaural study of sound through the lens of virtual object-oriented ontology. Worlds dynamically created and driven by external noises. Rendered with real-time raytracing."
     }
 ]

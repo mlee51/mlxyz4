@@ -1,4 +1,3 @@
-'use client'
 import React, { useState, useEffect } from 'react';
 
 const RedDotComponent = () => {
@@ -20,17 +19,12 @@ const RedDotComponent = () => {
         };
     }, []);
 
-    const isMobile = () => {
-        const width = typeof window !== "undefined" ? window.innerWidth : 1080;
-        return width <= 640; // Adjust the width threshold according to your needs
-    };
 
     return (
-        <div className="fixed w-full h-full z-40 mix-blend-exclusion pointer-events-none">
-            {!isMobile() && <div
-                className="fixed w-8 h-8 -mt-4 -ml-4 bg-red-900 opacity-40  rounded-full "
+        <div className="hidden sm:block fixed w-full h-full z-40 mix-blend-exclusion pointer-events-none">
+            <div className="fixed w-8 h-8 -mt-4 -ml-4 bg-red-900 opacity-40  rounded-full"
                 style={{ top: position.y, left: position.x }}
-            />}
+            />
         </div>
     );
 };

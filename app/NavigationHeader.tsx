@@ -8,6 +8,10 @@ export default function NavigationHeader() {
     const pathname = usePathname()
     const [open, setOpen] = useState<boolean>(false);
 
+    const closeMenuFromList = (route:string) => {
+        if(pathname===route) setOpen(false);
+    }
+
     return (
         <>
             <RedDotComponent />
@@ -28,10 +32,10 @@ export default function NavigationHeader() {
                         </div>
                     </div>
                     {open && <ul className="relative flex flex-col min-h-[100vh] pb-48 gap-10 text-center justify-center">
-                        <li><Link href={pathname === "/work" ? "/" : "/work"}>Work</Link></li>
-                        <li><Link href={pathname === "/about" ? "/" : "/about"}>About</Link></li>
+                        <li><Link onClick={()=>closeMenuFromList("/work")} href="/work">Work</Link></li>
+                        <li><Link onClick={()=>closeMenuFromList("/about")} href="/about">About</Link></li>
                         <li><a href="https://drive.google.com/file/d/1nuAWb5EGPfX37zLz7MV0FFChy4_ivJo8/view" target="_blank">Resume</a></li>
-                        <li><Link href={pathname === "/contact" ? "/" : "/contact"}>contact</Link></li>
+                        <li><Link onClick={()=>closeMenuFromList("/contact")} href="/contact">contact</Link></li>
                     </ul>}
                 </div>
             </header>
