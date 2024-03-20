@@ -23,7 +23,7 @@ export default function NavigationHeader() {
                             <ul className="hidden sm:flex justify-between">
                                 <li><Link href={pathname === "/work" ? "/" : "/work"}>Work</Link></li>
                                 <li><Link href={pathname === "/about" ? "/" : "/about"}>About</Link></li>
-                                <li><a href="https://drive.google.com/file/d/1nuAWb5EGPfX37zLz7MV0FFChy4_ivJo8/view" target="_blank">Resume</a></li>
+                                <li><a href="https://drive.google.com/file/d/1THeqdW_6leta4hrrbQGQw64uWQvEfOsN/view" target="_blank">Resume</a></li>
                                 <li><Link href={pathname === "/contact" ? "/" : "/contact"}>contact</Link></li>
                             </ul>
                             <svg onClick={() => setOpen(prev => !prev)} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="sm:hidden w-6 h-6">
@@ -34,7 +34,7 @@ export default function NavigationHeader() {
                     {open && <ul className="relative flex flex-col min-h-[100vh] pb-48 gap-10 text-center justify-center">
                         <li><Link onClick={()=>closeMenuFromList("/work")} href="/work">Work</Link></li>
                         <li><Link onClick={()=>closeMenuFromList("/about")} href="/about">About</Link></li>
-                        <li><a href="https://drive.google.com/file/d/1nuAWb5EGPfX37zLz7MV0FFChy4_ivJo8/view" target="_blank">Resume</a></li>
+                        <li><a href="https://drive.google.com/file/d/1THeqdW_6leta4hrrbQGQw64uWQvEfOsN/view" target="_blank">Resume</a></li>
                         <li><Link onClick={()=>closeMenuFromList("/contact")} href="/contact">contact</Link></li>
                     </ul>}
                 </div>
