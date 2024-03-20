@@ -3,22 +3,27 @@ import React, { useState, useEffect } from 'react';
 
 const RedDotComponent = () => {
     const [position, setPosition] = useState({ x: 0, y: 0 });
-    const isMobile = () => {
-        const width = typeof window !== "undefined" ? window.innerWidth : 1080;
-        return width <= 640; // Adjust the width threshold according to your needs
-    };
 
     useEffect(() => {
         const updateMousePosition = (event) => {
             setPosition({ x: event.clientX, y: event.clientY });
         };
 
-        document.addEventListener('mousemove', updateMousePosition);
+        if (typeof window !== "undefined") {
+            document.addEventListener('mousemove', updateMousePosition);
+        }
 
         return () => {
-            document.removeEventListener('mousemove', updateMousePosition);
+            if (typeof window !== "undefined") {
+                document.removeEventListener('mousemove', updateMousePosition);
+            }
         };
     }, []);
+
+    const isMobile = () => {
+        const width = typeof window !== "undefined" ? window.innerWidth : 1080;
+        return width <= 640; // Adjust the width threshold according to your needs
+    };
 
     return (
         <div className="fixed w-full h-full z-40 mix-blend-exclusion pointer-events-none">
