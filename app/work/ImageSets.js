@@ -11,6 +11,7 @@ export default function ImageSets({ setTracker, data, projectIndex, onLoad }) {
     const { imageUrls, imageSpan, tags, name } = data;
     const { ref, inView } = useInView({
         threshold: 1,
+        rootMargin: "0 0 -50% 0",
     });
     const hasWebm = hasWebmUrls(imageUrls);
 
