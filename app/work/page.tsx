@@ -7,7 +7,7 @@ import ImageSets from "./ImageSets";
 import data from '../data/data.json';
 
 const Work = () => {
-
+  //
   const [index, setIndex] = useState(0)
   const [collapsed, setCollapsed] = useState<boolean>(false);
   const [imagesLoaded, setImageLoaded] = useState<number>(0);
